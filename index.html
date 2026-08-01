@@ -1,21 +1,28 @@
 <!doctype html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Site-wide stylesheet -->
+  <link rel="stylesheet" href="stylemain.css" class="css"/>
+  <title>Kaitiakitanga Website</title>
+</head>
 <body>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylemain.css" class="css" />
-    <title>Kaitiakitanga Website</title>
-  </head>
+    <!-- Main nav bar, shared across all pages; "active" marks current page -->
     <ul>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="nativeplants.html">Native Plants</a></li>
         <li><a href="gardenproduce.html">Garden Produce</a></li>
     </ul>
-    <section class="banner"></section>
+
+    <!-- Full-width hero banner image, set via CSS background-image -->
+    <div class="banner"></div>
+
+    <!-- Content block 1: image + text side-by-side -->
     <section class="two-column">
       <div>
         <img src="Images/deforestation.jpg" alt="Image of a New Zealand forest with half of it cut down">
+        <p1>Image from the Wikimedia Commons</p1>
       </div>
       <div>
         <h1>
@@ -26,9 +33,12 @@
         </p>
       </div>
     </section>
+
+    <!-- Content block 2: image + text side-by-side -->
     <section class="two-column">
       <div class="img">
         <img src="Images/gateway.jpg" alt="Gateway_of_Kahurangi _Tapawera New Zealand">
+        <p1>Image from the Wikimedia Commons</p1>
       </div>
       <div>
         <h1>
@@ -39,6 +49,8 @@
         </p>
       </div>
     </section>
+
+    <!-- W3C CSS validator badge -->
 <p>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"

@@ -1,9 +1,11 @@
+/* Base page: offset for fixed nav, full-height, dark grey background */
 body, html {
   padding-top: 19px;
   height: 100%;  
   background-color: #646464; 
 }
 
+/* Nav bar container: fixed to top, spans full width, above other content */
 ul {
   list-style-type: none;
   margin: 0;
@@ -16,10 +18,12 @@ ul {
   z-index: 1000;
 }
 
+/* Nav items sit side by side */
 ul li {
   float: left;
 }
 
+/* Nav link styling */
 ul li a {
   display: block;
   color: white;
@@ -29,14 +33,17 @@ ul li a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Hover state, skipped for the active link */
 ul li a:hover:not(.active) {
   background-color: #111;
 }
 
+/* Highlights the current page's nav link */
 ul li a.active {
   background-color: #04AA6D;
 }
 
+/* Two-column layout: image column narrower than text column */
 .two-column {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -45,6 +52,7 @@ ul li a.active {
   margin-top: 50px;
 }
 
+/* Rounded corners on images inside two-column sections, with hover transition ready */
 .two-column img {
   width: 100%;
   height: auto;
@@ -52,6 +60,7 @@ ul li a.active {
   transition: transform 0.3s;
 }
 
+/* Full-width hero banner, background image set per-page via HTML */
 .banner {
   background-image: url(Images/kaitiakitange.jpg);
   height: 50%;
@@ -61,20 +70,31 @@ ul li a.active {
   position: relative;
 }
 
+/* Heading text style */
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
 
+/* Body paragraph text style */
 p {
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   font-size: larger;
 }
 
+/* Default image sizing/cropping (overridden by .two-column img above) */
 img {
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+/* Small caption text under images (custom <p1> tag, not standard HTML) */
+p1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: xx-small;
+  text-align: center;
 }
